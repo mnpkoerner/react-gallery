@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList.jsx'
 import GalleryForm from '../GalleryForm/GalleryForm.jsx'
+import swal from 'sweetalert';
 
 function App() {
   //I'm going to use some state (eventually)
@@ -36,6 +37,7 @@ function App() {
     })
   }
 
+
   //start with GET route, pull data from the server and get it in the console.
   //I'm storing the data I get from the server in the gallery variable
   //with setGallery. This way, every time I make this HTTP request, I'll
@@ -68,6 +70,39 @@ function App() {
       console.log(err);
       alert('error liking')
     })
+  }
+
+  //I also want a delete route to take cards from the gallery
+
+  const deleteCard = (cardId) => {
+    swal({
+      title: 'Delete this memory?',
+      text: 'Once deleted, this will only live on in your imagination',
+      icon: 'warning',
+      button: 'DELETE',
+    }).then((clicked)=>{
+      if(clicked){
+        swal('Treasure it in your own mind', {
+          icon: 'success',
+        })
+        const id = cardId;
+        axios({
+          method: 'DELETE',
+          url: `/gallery/${id}`
+        }).then((response)=>{
+          console.log(response);
+          getGallery();
+        }).catch((error)=>{
+          console.log(error)
+          alert('error deleting!')
+        })}
+        else {
+          swal('This memory has been kept')
+          return
+        }
+      }
+    )
+
   }
 
 
@@ -105,6 +140,7 @@ function App() {
       <GalleryList
         gallery={gallery}
         addLike={addLike}
+        deleteCard={deleteCard}
       />
     </div>
   );
