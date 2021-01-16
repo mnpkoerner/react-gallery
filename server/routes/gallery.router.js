@@ -45,4 +45,20 @@ router.get('/', (req, res) => {
     // res.send(galleryItems);
 }); // END GET Route
 
+//this is the POST route to add a new card to the gallery!
+router.post('/', (req, res)=>{
+    const newData = [req.body.path, req.body.description];
+    const queryText = `
+        INSERT INTO "cards" ("path", "description")
+        VALUES ($1, $2);
+    `;
+    pool.query(queryText, newData).then((response)=>{
+        console.log(response);
+        res.sendStatus(200);
+    }).catch((error)=>{
+        console.log(error);
+        res.sendStatus(500);
+    })
+})
+
 module.exports = router;
