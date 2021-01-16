@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to left, rgb(247, 215, 203), rgb(206, 139, 114));
+
 }
 
 .App-header {
@@ -57,10 +59,16 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .holder{
   margin-top: 10px;
   height: 300px;
   width: 300px;
+}
+
+.holder:hover{
+  box-shadow: 1px 1px 3px grey;
+  transition: .2s;
 }
 
 .like-container{
