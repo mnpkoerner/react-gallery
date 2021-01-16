@@ -14,27 +14,42 @@
 }
 
 .image-home{
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
 }
 
 .card-text{
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   background-color: dodgerblue;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 img {
-  padding: 0;
   margin: 0;
-  height: 100px;
-  width: 100px;
+  padding: 0;
+  height: 300px;
+  width: 300px;
 }
 
 .gallery-card {
-  height: 300px;
-  width: 150px;
+  height: 380px;
+  width: 320px;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.holder{
+  margin-top: 10px;
+  height: 300px;
+  width: 300px;
 }

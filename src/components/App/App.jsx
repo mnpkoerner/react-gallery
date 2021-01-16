@@ -60,7 +60,6 @@ function App() {
           gallery={gallery}
           addLike={addLike}
         />
-        <img src="images/goat_small.jpg"/>
       </div>
     );
 }

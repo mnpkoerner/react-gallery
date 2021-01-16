@@ -11,10 +11,10 @@ export default function GalleryItem({
     function handleClick(){
         setIsVisible(!isVisible);
     }
-    
+
     return (
         <div className="gallery-card">
-            <div onClick={()=>handleClick()}>
+            <div onClick={()=>handleClick()} className="holder">
             {isVisible ? <img src={card.path} /> : <p className="card-text">{card.description}</p>}
             </div>
             <p>{card.likes}</p>
