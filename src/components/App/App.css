@@ -1,19 +1,20 @@
 .App {
   text-align: center;
   background-image: linear-gradient(to left, rgb(247, 215, 203), rgb(206, 139, 114));
-
+  font-family: AvenirNext-Regular;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #222222;
   padding: 1em;
-  color: white;
+  color: aliceblue;
   margin-bottom: 1em;
 }
 
 .App-title {
   font-size: 1.5em;
 }
+
 
 .image-home{
   height: 300px;
@@ -64,10 +65,12 @@ img {
   margin-top: 10px;
   height: 300px;
   width: 300px;
+  opacity: 85%
 }
 
 .holder:hover{
   box-shadow: 1px 1px 3px grey;
+  opacity: 100%;
   transition: .2s;
 }
 
