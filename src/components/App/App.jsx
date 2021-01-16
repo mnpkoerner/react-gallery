@@ -19,13 +19,31 @@ function App() {
       method: 'GET',
       url: '/gallery'
     }).then((response)=>{
-      console.log(response.data)
       setGallery(response.data);
       console.log('gallery value', gallery)
     }).catch((err)=>{
+      alert('error getting')
       console.log(err);
     })
   }
+  //my put route will live on my App.jsx, then I'll pass it
+  //in as props down to GalleryItem
+  const addLike = (imageId) => {
+    const id = imageId;
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${id}`,
+      data: 'data'
+    }).then((response)=>{
+      console.log(response)
+      getGallery();
+    }).catch((err)=>{
+      console.log(err);
+      alert('error liking')
+    })
+  }
+
+
   //with useEffect, on page load, call getGallery
   //to pull up all the data from the server
   //eventually, we'll rewrite the route to get data
@@ -40,6 +58,7 @@ function App() {
         </header>
         <GalleryList
           gallery={gallery}
+          addLike={addLike}
         />
         <img src="images/goat_small.jpg"/>
       </div>

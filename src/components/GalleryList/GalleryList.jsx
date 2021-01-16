@@ -1,16 +1,20 @@
+import GalleryItem from '../GalleryItem/GalleryItem.jsx'
+
 export default function GalleryList({
-    gallery
+    gallery,
+    addLike
 }){
     console.log('gallery in GalleryList', gallery)
     return (
         <div className="gallery-container">
-        {gallery.map((card)=>(
-            <div key={card.id}>
-            <p>{card.path}</p>
-            <p>{card.description}</p>
-            <p>{card.likes}</p>
-            </div>
-        ))}
+        {gallery.map((card)=>{
+            return (
+            <GalleryItem
+                key={card.id}
+                card={card}
+                addLike={addLike}
+            />)
+            })}
         </div>
     )
 }
