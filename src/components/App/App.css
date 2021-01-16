@@ -13,3 +13,43 @@
   font-size: 1.5em;
 }
 
+.image-home{
+  height: 300px;
+  width: 300px;
+}
+
+.card-text{
+  width: 300px;
+  height: 300px;
+  background-color: dodgerblue;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  width: 300px;
+}
+
+.gallery-card {
+  height: 380px;
+  width: 320px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.holder{
+  margin-top: 10px;
+  height: 300px;
+  width: 300px;
+}

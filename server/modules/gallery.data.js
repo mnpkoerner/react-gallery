@@ -1,10 +1,185 @@
 const galleryItems = [
     {
         id: 1,
-        path: 'images/goat_small.jpg',
-        description: 'Photo of a goat taken at Glacier National Park.',
-        likes: 0
+        path: 'images/11_1.jpg',
+        description: 'Back in minneapolis, and I\'ve been away from home for so long I forget which key is home. Nothing inside is quite how I left it and everything feels familiar',
+        likes: 0,
+    },
+    {
+        id: 2,
+        path: 'images/11_2.jpg',
+        description: 'I know the sun is somewhere, and I need to be careful and kind. I\'m overwhelmed by silence and a future that never really shows up',
+        likes: 0,
+    },
+    {
+        id: 3,
+        path: 'images/11_3.jpg',
+        description: 'The trash is full of broken glass and Tommy told me not to trust the pyramids even though they\'ve been around for a while and some people get church at 3am',
+        likes: 0,
+    },
+    {
+        id: 4,
+        path: 'images/11_4.jpg',
+        description: 'On the road again and streetlamps tower over Nowhere, Illinois. I waited in line behind a cricket at the vending machine and we\'re still forever from the gold coast',
+        likes: 0,
+    },
+    {
+        id: 5,
+        path: 'images/11_5.jpg',
+        description:'Just outside Detroit, no one told the wedding that a rodeo was happening. After I learn some alchemy, I\'ll fall asleep to the light outside my window and static from the TV screen.',
+        likes: 0,
+    },
+    {
+        id: 6,
+        path: 'images/11_6.jpg',
+        description: 'We\'re off to Canada and everything feels like pulling the garden from the weeds and the fall before the climb. And I remember when we were kings of tomorrow together.',
+        likes: 0,
+    },
+    {
+        id: 7,
+        path: 'images/11_7.jpg',
+        description:'The snow is new in Ontario and I\'m drifting between familiar nightmares in the passenger seat. Crowns adorn the overpass behind the sunrise district.',
+        likes: 0,
+    },
+    {
+        id: 8,
+        path: 'images/11_8.jpg',
+        description: 'I confuse lights for people sometimes and I keep a place set for you in my heart. When I rememeber spring, I feel my hands go numb and the past contains the present.',
+        likes: 0,
+    },
+    {
+        id: 9,
+        path: 'images/11_9.jpg',
+        description: 'I\'m back in Lancaster and covered in emotional sludge. Past the twin villians on the road to Kutztown there\'s a whole city out of busines and up for rent.',
+        likes: 0,
+    },
+    {
+        id: 10,
+        path: 'images/11_10.jpg',
+        description: 'I know I\'ll be home sooner than I think and yesterday feels like forever. In Brooklyn, they\'re decorated for Christmas and crows are eating a cat eyes first.',
+        likes: 0,
+    },
+    {
+        id: 11,
+        path: 'images/11_11.jpg',
+        description: 'Don\'t listen to what they tell you in New Jersey because I\'m pretty certain pork roll is just another word for baloney. I\'m hungry and I don\'t want to eat alone.',
+        likes: 0,
+    },
+    {
+        id: 12,
+        path: 'images/11_12.jpg',
+        description: 'The world is mostly ordinary things in extraordinary places and these rooms all felt bigger the first time I was here.',
+        likes: 0,
+    },
+    {
+        id: 13,
+        path: 'images/11_13.jpg',
+        description: 'In Columbus, I\'m waiting for the world to end in the space you left behind and listening to the world in stereo.',
+        likes: 0,
+    },
+    {
+        id: 14,
+        path: 'images/11_14.jpg',
+        description: 'Stuck on road noise just outside Chicago, and I turn up the volume click by click. As far as I can tell, it\'s always wintere here and they have the best pickles.',
+        likes: 0,
+    },
+    {
+        id: 15,
+        path: 'images/11_15.jpg',
+        description: 'Everything sucked and nothing was cool because the moon keeps closing and I stepped in the same puddle twice.',
+        likes: 0,
+    },
+    {
+        id: 16,
+        path: 'images/11_16.jpg',
+        description: 'After one night in Omaha, the wheels are spinning while the world stays still. There\'s shudders behind the curtains and the classics play in black and white.',
+        likes: 0,
+    },
+    {
+        id: 17,
+        path: 'images/11_17.jpg',
+        description: 'Everything sounds flat on the inside. Time is scrambled and I just want to sleep and the whole bar just keeps ordering shots.',
+        likes: 0,
+    },
+    {
+        id: 18,
+        path: 'images/11_18.jpg',
+        description: 'I parked at a pretty dumb angle last night, and usually I cook for myself when I feel lonely.',
+        likes: 0,
+    },
+    {
+        id: 19,
+        path: 'images/11_19.jpg',
+        description: 'When I\'m left alone, I dial up the old thunder and watch the past stretch backwards into miles and miles of miles and miles.',
+        likes: 0,
+    },
+    {
+        id: 20,
+        path: 'images/11_20.jpg',
+        description: 'I\'m sick to my stomach and my teeth won\'t stop buzzing. And sometimes I just want to disappear into memory.',
+        likes: 0,
+    },
+    {
+        id: 21,
+        path: 'images/11_21.jpg',
+        description: 'The traffic runs both ways and I wonder which songs stay locked inside pianos where half the keys are gone. When I close my eyes the room is full of strangers and stranger numbers.',
+        likes: 0,
+    },
+    {
+        id: 22,
+        path: 'images/11_22.jpg',
+        description:'It\'s too late to tell some people that their shoes are untied. I missed a few candles and an entire person.',
+        likes: 0,
+    },
+    {
+        id: 23,
+        path: 'images/11_23.jpg',
+        description: 'There\'s shadows on the clouds and I\'m sick to death of words until the whole murder appears to love it all at it\'s worst.',
+        likes: 0,
+    },
+    {
+        id: 24,
+        path: 'images/11_24.jpg',
+        description:'I\'ll pull a single thread from the gold and lose some blood in the soup. Everything good is alive today and I\'m full of sleep and wonder.',
+        likes: 0,
+    },
+    {
+        id: 25,
+        path: 'images/11_25.jpg',
+        description: 'I think there\'s more I need than feeling good because I want to feel complete.',
+        likes: 0,
+    },
+    {
+        id: 26,
+        path: 'images/11_26.jpg',
+        description: 'Drawing horses is difficult and life rushes by without a blur. Our roads diverged once and now we\'re back together.',
+        likes: 0,
+    },
+    {
+        id: 27,
+        path: 'images/11_27.jpg',
+        description: 'Everytime I think of you I remember something different so maybe I\'ve managed to keep you alive and growing in my heart.',
+        likes: 0,
+    },
+    {
+        id: 28,
+        path: 'images/11_28.jpg',
+        description:'There\'s no time to waste and eleven legs between them all.',
+        likes: 0,
+    },
+    {
+        id: 29,
+        path: 'images/11_29.jpg',
+        description:'Blueberry pancakes and three cups of coffee and only a few more days before we hit the road again. I think Thanksgiving leftovers taste the best because I remember someone loves me.',
+        likes: 0,
+    },
+    {
+        id: 30,
+        path: 'images/11_30.jpg',
+        description: 'I can\'t rememeber your birthday and I\'m grateful for your smile. My old friends see right through me and organize the noise.',
+        likes: 0,
     }
+
 ];
 
 module.exports = galleryItems;
