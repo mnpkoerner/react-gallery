@@ -61,4 +61,20 @@ router.post('/', (req, res)=>{
     })
 })
 
+//delete route to remove specific item from database
+router.delete('/:id', (req, res)=>{
+    const id = [req.params.id];
+    const queryText = `
+        DELETE FROM "cards"
+        WHERE "id" = $1
+    `
+    pool.query(queryText, id).then((response)=>{
+        console.log(response);
+        res.sendStatus(204);
+    }).catch((error)=>{
+        console.log(error);
+        res.sendStatus(500);
+    })
+})
+
 module.exports = router;

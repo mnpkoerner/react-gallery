@@ -2,7 +2,8 @@ import GalleryItem from '../GalleryItem/GalleryItem.jsx'
 
 export default function GalleryList({
     gallery,
-    addLike
+    addLike,
+    deleteCard
 }){
     console.log('gallery in GalleryList', gallery)
     return (
@@ -13,6 +14,7 @@ export default function GalleryList({
                 key={card.id}
                 card={card}
                 addLike={addLike}
+                deleteCard={deleteCard}
             />)
             })}
         </div>

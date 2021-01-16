@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 export default function GalleryItem({
     card,
-    addLike
+    addLike,
+    deleteCard,
 }) {
     //declare state to determine whether to show the text OR the photo
     const [isVisible, setIsVisible] = useState(true)
@@ -19,7 +20,10 @@ export default function GalleryItem({
             </div>
             <div className="like-container">
                 <button onClick={() => addLike(card.id)}>LIKE THIS<span>&#9829;</span></button>
-                <p>{card.likes} People like this</p>
+                <p id="likes">{card.likes} People like this</p>
+                <button
+            id="deleteButton"
+            onClick={()=> deleteCard(card.id)}>X</button>
             </div>
         </div>
     )
