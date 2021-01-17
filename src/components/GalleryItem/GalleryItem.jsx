@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import LikeCounter from '../LikeCounter/LikeCounter';
 
 export default function GalleryItem({
     card,
@@ -20,7 +21,10 @@ export default function GalleryItem({
             </div>
             <div className="like-container">
                 <button onClick={() => addLike(card.id)}>LIKE THIS<span>&#9829;</span></button>
-                <p id="likes">{card.likes} People like this</p>
+                {/* <p id="likes">{card.likes} People like this</p> */}
+                <LikeCounter
+                    card={card}
+                    />
                 <button
             id="deleteButton"
             onClick={()=> deleteCard(card.id)}>X</button>
